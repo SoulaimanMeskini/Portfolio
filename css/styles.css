@@ -1,52 +1,84 @@
 *{
-
 list-style: none;
 text-decoration: none;
 font-family: sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-.header_background{
-  background-color: rgba(16,16,16, 0) !important;
+body{
+  background-color: whitesmoke;
+  min-height: 200vh;
 }
 
-.header{
+/* Nav Bar */
+
+header{
+  position: fixed;
   width: 100%;
-  min-height: 100vh;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: block;
-  
-}
-
-.logo{
-  width: 125px;
-  height: auto;
-  cursor: pointer;
-  margin-left: 150px;
-}
-
-/*
-.navbar-brand {
-  display: flex; 
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-} */
-
-.castle-position
-{
-  position: relative;
+  transition: 0.6s;
+  padding: 40px 100px;
 }
 
-.masterhead {
-  position: absolute;
-  top: 25px;
-  left: 25px;
+header .logo{
+  position: relative;
+  font-weight: 700;
+  color: grey;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: 0.6s;
+}
+
+header.sticky{
+  padding: 5px 100px;
+  background: rgb(73, 16, 16);
+}
+
+header.sticky ul li a{
+  color: black;
+}
+
+header.sticky .logo{
+  color: black;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+position: relative;
+list-style: none;
+}
+
+header ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: grey;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 /* Typ animatie */
-
 
 .container-copyright p span.typed-text {
   font-weight: normal;
@@ -79,29 +111,4 @@ font-family: sans-serif;
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
-  .hero-banner {
-    background-position: center center;
-    height: 100vh;
-    width: 100%;
-    background-size: inherit;
-  }
-}
 
-nav li a:hover {
-  border-bottom: 3px solid white;
-}
-
-/* Dit zorgt ervoor dat de navigatie niet op een neer beweegt na een hover */
-nav li a {
-  border-bottom: 3px solid transparent;
-}
-
-body {
-  background-color: red;
-}
-
-[data-theme="dark"] body {
-  background-color: #111 !important;
-  color: #eee;
-}
