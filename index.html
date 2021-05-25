@@ -25,6 +25,7 @@
 
 
 <body>
+    <div class="pointer"></div>
 
     <!-- navbar -->
     <header>
@@ -32,45 +33,49 @@
         <ul>
             <li><a href="#">ABOUT ME</a></li>
             <li><a href="#">LOOK BOOK</a></li>
-                <div class="dropdown">
-                    <li><a>SCHOOL PORTFOLIO</a></li>
-                    <div class="dropdownContent">  
-                        <li><a href="#">SEMESTER 1</a></li>
-                        <li><a href="#">SEMESTER 1</a></li>
-                        <li><a href="#">SEMESTER 1</a></li>
-                    </div>    
+            <div class="dropdown">
+                <li><a>SCHOOL PORTFOLIO</a></li>
+                <div class="dropdownContent">
+                    <a href="#">SEMESTER 1</a>
+                    <a href="#">SEMESTER 1</a>
+                    <a href="#">SEMESTER 1</a>
                 </div>
+            </div>
             <li><a href="#">CONTACT</a></li>
         </ul>
+
     </header>
-    
-        
+
+
     <!-- Section 1 -->
     <div class="banner flex-column">
         <div class="animatie">
             <p class="text-uppercase"><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
         </div>
-        
-        <p><br/> Hi! I'm Soulaiman,<br/> <br /> Here you'll get to know everything about me!<br /> From my projects and designs to all the school stuff. <br/> <br/> Enjoy!</p>
+
+        <p><br /> Hi! I'm Soulaiman,<br /> <br /> Here you'll get to know everything about me!<br /> From my projects and designs to all the school stuff. <br /> <br /> Enjoy!</p>
 
         <div class="image-fade"></div>
-    </div> 
+    </div>
 
 
-     <!-- Section 2 -->
+    <!-- Section 2 -->
     <div class="about">
         <div class="">
-            <img class="about-image" src="assets\img\souli.png"/>
-            <p style="padding-left: 50px;" >Hi! as you may know I am Soulaiman but my friends call me Souli. I am 21 and live in The Netherlands. I am currently doing a Bachelor's Degree in IT at Fontys University of Applied Sciences. I am very driven and want to get a 100% out of everything I do. I keep myself busy with a lot of different creative things like drawing, music, dance and clothing.</p>
+            <img class="about-image" src="assets\img\souli.png" />
+            <p style="padding-left: 50px;">Hi! as you may know I am Soulaiman but my friends call me Souli. I am 21 and live in The Netherlands. I am currently doing a Bachelor's Degree in IT at Fontys University of Applied Sciences. I am very driven and want to get a 100% out of everything
+                I do. I keep myself busy with a lot of different creative things like drawing, music, dance and clothing.
+            </p>
         </div>
         <div class="">
-             <p>I love entrepreneurship and that is why I started my own company Souraiko. I also have a passion for gaming and streaming which i currently do on Twitch with the name Meneer Perfect. I also love music and dance, my favorite dance styles are popping and animation. I have a lot of experience with Adobe programs and am pretty good at that. I spend a lot of time on IT/Software.</p>
-             <img class="about-image" src="assets\img\me_edit.png" style="width: 300px;height: unset;" /> 
+            <p>I love entrepreneurship and that is why I started my own company Souraiko. I also have a passion for gaming and streaming which i currently do on Twitch with the name Meneer Perfect. I also love music and dance, my favorite dance styles are
+                popping and animation. I have a lot of experience with Adobe programs and am pretty good at that. I spend a lot of time on IT/Software.</p>
+            <img class="about-image" src="assets\img\me_edit.png" style="width: 300px;height: unset;" />
         </div>
         <div class="image-fade2"></div>
     </div>
-    
-     <!-- Section 2 -->
+
+    <!-- Section 2 -->
 
     <br />
     <br />
@@ -81,12 +86,12 @@
     <br />
     <br />
     <br />
-   
 
 
 
-    
-    
+
+
+
     <!-- About Me-->
 
 
@@ -113,19 +118,17 @@
     </footer>
 
 
-    
+
     <!-- Java-->
     <script src="js/scripts.js"></script>
     <script src="js/Textanimation.js"></script>
-    
+
     <script type="text/javascript">
-        
         window.addEventListener("scroll", () => {
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 900);
         })
     </script>
-
 
 </body>
 
