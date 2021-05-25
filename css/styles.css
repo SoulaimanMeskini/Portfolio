@@ -1,3 +1,12 @@
+
+
+/* collors
+whitesmoke
+black
+purple
+*/
+
+
 /* general */
 
 * {
@@ -13,6 +22,11 @@ body {
   background-color: whitesmoke;
   min-height: 200vh;
 }
+
+img{
+  pointer-events: none;
+}
+
 
 /* Nav Bar */
 
@@ -33,23 +47,21 @@ header {
 }
 
 header .logo {
+  background-image: url("../assets/img/sm_logo_white.png");
+  background-position: center;
+  background-size: cover;
   position: relative;
-  font-weight: 700;
-  color: grey;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transform: 0.6s;
+  transition: 0.6s;
+  width: 120px;
+  height: 100%;
 }
 
 header.sticky {
-  /* padding: 5px 100px; */
-  background: rgb(73, 16, 16);
+  background: rgb(255, 255, 255);
 }
 
 header.sticky ul li a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 header.sticky button {
@@ -57,7 +69,9 @@ header.sticky button {
 }
 
 header.sticky .logo {
-  color: black;
+  background-image: url("../assets/img/sm_logo_black.png");
+  width: 120px;
+  height: 100%;
 }
 
 header ul {
@@ -81,7 +95,7 @@ header ul li a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
-  color: grey;
+  color: white;
   letter-spacing: 2px;
   font-weight: 500px;
   transition: 0.6s;
@@ -96,15 +110,15 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: goldenrod;
+  color: purple;
 }
 
 header .logo:hover {
-  color: goldenrod;
+  color: purple;
 }
 
 header button:hover {
-  color: goldenrod;
+  color: purple;
 }
 
 header button {
@@ -114,7 +128,7 @@ header button {
   background-color: transparent;
   transition: 0.6s;
   cursor: pointer;
-  color: grey;
+  color: whitesmoke;
   font-weight: 500px;
   text-decoration: none;
   text-transform: uppercase;
@@ -145,7 +159,7 @@ header button {
   text-decoration: none;
   border: none;
   background-color: transparent;
-  color: grey;
+  color: whitesmoke!important;
   letter-spacing: 2px;
   font-weight: 500px;
   padding: 5px 0px;
@@ -157,13 +171,11 @@ header button {
   border-radius: 6px
 }
 
-/* Change color of dropdown links on hover */
 .dropdownContent a:hover {
   background-color: transparent;
   ;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdownContent {
   display: block;
 }
@@ -175,7 +187,7 @@ header button {
   background-size: cover;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/castle_glitch.jpg");
-  background-image: url("../assets/img/castle_glitch.jpg");
+  background-image: url("../assets/img/Castle_glitch2.png");
   width: 100%;
   height: 900px;
   display: flex;
@@ -194,7 +206,7 @@ header button {
 
 .banner p {
   text-align: center;
-  color: whitesmoke;
+  color: rgb(245, 245, 245)
 }
 
 .hero-banner {
@@ -220,12 +232,12 @@ background: linear-gradient(360deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0) 90%);
 .container-copyright p span.typed-text {
   font-weight: normal;
   font-size: 2.5rem;
-  color: white;
+  color: rgb(245, 245, 245);
 }
 
 .container-copyright p span.cursor {
   display: inline-block;
-  background-color: #ccc;
+  background-color: rgb(245, 245, 245);
   font-size: 2.5rem;
   margin-left: 0.1rem;
   width: 3px;
@@ -263,12 +275,13 @@ background: linear-gradient(360deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0) 90%);
 .about{
   width: 100%;
   background-color: rgb(0, 0, 0);
-  color: white;
-  padding: 50px;
+  color: rgb(245, 245, 245);
+  position: relative;
 }
 
 .about > div {
   display: flex;
+  padding: 0px 60px;
 
 }
 
@@ -279,7 +292,6 @@ background: linear-gradient(360deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0) 90%);
 }
 
 .about-image{
-  /* width: 100%; */
   height: 400px;
 }
 
@@ -289,4 +301,102 @@ background: linear-gradient(360deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0) 90%);
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.image-fade2 {
+  height: 200px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  background: linear-gradient(360deg, rgb(245, 245, 245) 0%, rgba(255,255,255,0) 90%);
+  position: absolute;
+  bottom: 0;
+}
+
+/* footer */
+
+footer{
+  background: rgb(12, 12, 12);
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: whitesmoke;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-content span:hover{
+  color: purple;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: purple;
+}
+
+.footer-bottom{
+  background-color: black;
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  justify-content: center;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+  color: whitesmoke;
+}
+
+.footer-bottom span:hover{
+  color: purple;
 }
