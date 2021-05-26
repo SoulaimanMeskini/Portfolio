@@ -37,7 +37,7 @@ img {
     height: 100vh;
     z-index: 30;
     overflow: visible;
-    background: #000 url('../assets/gif/efjefh') no-repeat center center;
+    background: #000 url('../assets/gif/loading.gif') no-repeat center center;
 }
 
 
