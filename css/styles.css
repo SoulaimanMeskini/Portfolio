@@ -91,7 +91,8 @@ video {
 
 /* scrollbar */
 
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -103,7 +104,7 @@ video {
 
 ::-webkit-scrollbar-track {
     background-color: hidden;
-}
+} */
 
 
 /* Nav Bar */
@@ -475,4 +476,44 @@ footer {
 
 .footer-bottom span:hover {
     color: purple;
+}
+
+
+/* STIJLING SEMESTER 2*/
+
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+*::before *::after {
+    box-sizing: border-box;
+}
+
+.semester2 {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--clr-bg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--clr-neon);
+}
+
+.neon-button {
+    font-size: 4rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-bg) 0.125em solid;
+    padding: .25em 1em;
+    border-radius: 0.25em;
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.neon-button:hover {
+    transform: scale(1.1);
 }
