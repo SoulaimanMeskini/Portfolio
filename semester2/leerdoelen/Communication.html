@@ -10,7 +10,7 @@
     <meta name="author" content="Soulaiman Meskini" />
     <title>Soulaiman Meskini - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <link href="semester2.css" rel="stylesheet" />
+    <link href="leerdoelen.css" rel="stylesheet" />
 
 
     <!-- Font awesome-->
@@ -23,19 +23,20 @@
 
 
 <body>
+
     <!-- navbar -->
     <header>
         <div href="index.html" class="logo"></div>
         <ul>
-            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
             <li><a href="#">LOOK BOOK</a></li>
             <div class="dropdown">
                 <li><a>SCHOOL PORTFOLIO</a></li>
                 <div class="dropdownContent">
-                    <a href="semester2.html">SEMESTER 2</a>
+                    <a href="/semester2/menu.html">SEMESTER 2</a>
                 </div>
             </div>
-            <li><a href="../html/contact.html">CONTACT</a></li>
+            <li><a href="/html/contact.html">CONTACT</a></li>
         </ul>
 
     </header>
@@ -44,16 +45,13 @@
 
 
     <!-- Section 1 -->
-    <section class="buttons">
-        <div class="bt-center">
-            <a href="leerdoelen/interactiveMedia.html" class="neon-button">Interactive Media</a>
-            <a href="leerdoelen/Development.html" class="neon-button">Development</a>
-            <a href="leerdoelen/Design.html" class="neon-button">Design</a>
-            <a href="leerdoelen/Research.html" class="neon-button">Research</a>
-            <a href="leerdoelen/Communication.html" class="neon-button">Communication</a>
-            <a href="leerdoelen/ProfessionalIdentity.html" class="neon-button">Professional Identity</a>
-        </div>
+    <section class="box">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+            with desktop publishing</p>
     </section>
+
+
 
     <!-- Footer-->
     <footer>
@@ -78,7 +76,7 @@
     <script type="text/javascript">
         window.addEventListener("scroll", () => {
             var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
+            header.classList.toggle("sticky", window.scrollY > 250);
         })
     </script>
 </body>

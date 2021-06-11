@@ -1,117 +1,31 @@
-/* collors
-whitesmoke - 
-black - 
-purple - 
- dark purple - rgb(88, 1, 88);
-*/
-
-
-/* general */
-
 * {
-    list-style: none;
-    text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    cursor: none !important;
+    width: 100%;
 }
 
 body {
-    background-color: whitesmoke;
-    min-height: 200vh;
-    overflow-x: hidden;
+    background-color: black;
 }
 
-img {
-    pointer-events: none;
+section {
+    font-size: 24px;
+    color: #000000;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 69px 100px;
+    border-radius: 24px;
 }
 
-
-/* loading screen */
-
-#loader {
-    position: absolute;
-    align-content: center;
-    width: 100%;
-    height: 100vh;
-    z-index: 30;
-    overflow: visible;
-    background: #000
+section p {
+    color: whitesmoke;
 }
-
-video {
-    width: 100%;
-    height: 100vh;
-}
-
-
-/* cursor*/
-
-.pointer {
-    pointer-events: none;
-    width: 25px;
-    height: 25px;
-    border: 3px solid purple;
-    border-radius: 50%;
-    opacity: 0.5;
-    z-index: 25;
-    position: absolute;
-    animation: cursorAnim .9s infinite alternate;
-}
-
-.expand {
-    animation: cursorAnim2 .5s forwards;
-    border: 3x solid rgb(88, 1, 88);
-}
-
-@keyframes cursorAnim {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.5);
-    }
-}
-
-@keyframes cursorAnim2 {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(3);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-
-
-/* scrollbar */
-
-::-webkit-scrollbar {
-    width: 11px;
-    height: 11px;
-}
-
- ::-webkit-scrollbar-thumb {
-    background: linear-gradient(74deg, #29062e 39%, #70094a 54%);
-    border-radius: 10px;
-}
-
- ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(13deg, #29062E 14%, #70094a 64%);
-}
-
- ::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 12px;
-    box-shadow: inset 7px 10px 12px #f0f0f0;
-}
-
-
-/* Nav Bar */
 
 header {
     position: fixed;
@@ -262,134 +176,6 @@ header button {
 
 .dropdownContent a:hover {
     color: purple;
-}
-
-
-/* sectie 1 */
-
-.banner {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/castle_glitch.jpg");
-    background-image: url("../assets/img/Castle_glitch2.png");
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.animatie p {
-    font-weight: 700;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 3em;
-    letter-spacing: 2px;
-    transform: 0.6s;
-}
-
-.banner p {
-    text-align: center;
-    color: rgb(245, 245, 245)
-}
-
-.hero-banner {
-    background: url('/assets/img/castle_glitch.jpg');
-    background-position: cover;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.image-fade {
-    height: 200px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0);
-    background: linear-gradient(360deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 90%);
-    position: absolute;
-    bottom: 0;
-}
-
-
-/* Typ animatie */
-
-.container-copyright p span.typed-text {
-    font-weight: normal;
-    font-size: 2.5rem;
-    color: rgb(245, 245, 245);
-}
-
-.container-copyright p span.cursor {
-    display: inline-block;
-    background-color: rgb(245, 245, 245);
-    font-size: 2.5rem;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-}
-
-.container-copyright p span.cursor.typing {
-    animation: none;
-}
-
-@keyframes blink {
-    0% {
-        background-color: #ccc;
-    }
-    49% {
-        background-color: #ccc;
-    }
-    50% {
-        background-color: transparent;
-    }
-    99% {
-        background-color: transparent;
-    }
-    100% {
-        background-color: #ccc;
-    }
-}
-
-
-/* sectie 2 */
-
-.about {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: rgb(245, 245, 245);
-    position: relative;
-}
-
-.about>div {
-    display: flex;
-    padding: 0px 60px;
-}
-
-
-/* .about>div,
-p {
-    display: flex;
-    align-items: center;
-} */
-
-.about-image {
-    width: 100%;
-    height: 400px;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.image-fade2 {
-    height: 200px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0);
-    background: linear-gradient(360deg, rgb(245, 245, 245) 0%, rgba(255, 255, 255, 0) 90%);
-    position: absolute;
-    bottom: 0;
 }
 
 
