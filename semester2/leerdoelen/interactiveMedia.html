@@ -11,6 +11,7 @@
     <title>Soulaiman Meskini - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link href="leerdoelen.css" rel="stylesheet" />
+    <link rel="stylesheet" href="default.css">
 
 
     <!-- Font awesome-->
@@ -21,100 +22,117 @@
 
 </head>
 
+<body class="alc">
 
-<body>
     <!-- navbar -->
     <header>
-        <div href="index.html" class="logo"></div>
+        <div onclick="location.href='../../index.html'" class="logo"></div>
         <ul>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">LOOK BOOK</a></li>
+            <li>
+                <a onclick="goBack()">BACK</a>
+            </li>
+            <li>
+                <a href="#">ABOUT ME</a>
+            </li>
+            <li>
+                <a href="#">LOOK BOOK</a>
+            </li>
             <div class="dropdown">
-                <li><a>SCHOOL PORTFOLIO</a></li>
+                <li>
+                    <a>SCHOOL PORTFOLIO</a>
+                </li>
                 <div class="dropdownContent">
                     <a href="/semester2/menu.html">SEMESTER 2</a>
                 </div>
             </div>
-            <li><a href="/html/contact.html">CONTACT</a></li>
+            <li>
+                <a href="/html/contact.html">CONTACT</a>
+            </li>
         </ul>
 
     </header>
 
-    <!-- Section 1 -->
-    <br>
-    <a href="../semester2.html" class="back-bt">BACK</a>
-    <div class="content">
-        <h1>Interactive Media</h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1>portfolio</h1><br>
-        <p>Dit semester wilde ik me compleet focussen op een professionele portfolio website. Dit wilde ik ook in mijn eigen stijl neerzetten. Ook al is de doelgroep voor dit portfolio de docenten, Ik wilde niet iets maken wat ik na semester 2 weer weg leg.
-            Dit portfolio maak ik zo zodat ik er elk semester op verder kan bouwen en waar al mijn vooruitgang in te zien zal zijn. Met dit in mijn gedachten ben ik bezig geweest met een mock-up view.</p><br>
-        <!-- mock-up -->
+    <section class="vh10 fdc"></section>
 
-        <h3>Feedback</h3>
-        <p>Na met meerdere docenten gesproken te hebben over mijn portfolio zijn er een aantal conclusies naar voren gekomen. Namelijk dat het er donker uitzag maar dit wel goed bij de stijl past. Ik kreeg als tip mee om met tijd te spelen in de vorm van
-            een dag en nachtmodus. En het logo moest meer naar voren springen. Ik kreeg ook als tip dat ik ook al is het portfolio bedoeld voor een lange periode, dat ik ook goed moet nadenken over bepaalde layouts en de leeruitkomsten van semester 2.
-        </p><br>
-        <h3>Docenten</h3><br>
-        <h3>Wat heb ik geleerd</h3><br>
-        <p>Ik heb een sterke basis aangelegd in HTML en CSS. Veel groter dan in S1. Daarnaast heb ik vrijwel geen uitleg nodig gehad van leerlingen of ben ik tegen hele moeilijk problemen aangelopen. Wel heb ik een docent gevraagd om mij wekelijkse opdrachten
-            te geven zodat ik wel op schema bleef en ook mijn tijd aan de goede dingen deed besteden. Dit heeft mij veel geholpen om een begin te maken aan Javascript en daar de basis van te begrijpen.
-        </p><br>
-        <h3>Wat kon er beter</h3><br>
-        <p>Ik had een duidelijker stappenplan op moeten zetten of een beter schema moeten maken waarin ik opschreef wat ik aan het einde van de week af wilde/moest hebben zodat ik op het einde niet in de soep zou lopen met mijn portfolio en zodat ik nog
-            extra feedback kon vragen aan docenten.</p><br>
-        <h3>Wat zou ik de volgende keer anders doen</h3><br>
-        <p>Ik zou de opdracht gerichter aangaan in plaats van in elke opdracht heel veel van mezelf te stoppen zodat ik ook alle criteria van de opdracht behaal.</p><br>
-        <br>
+    <section class="vw90 padround10px mlauto mrauto">
+        <div class="fdr padround10px mlauto mrauto">
+            <h1 class="fdr padround10px mlauto mrauto">Comminication</h1>
+            <h3 class="fdr w40 padround10px padtop25px mlauto mrauto alleft">Ruby Mus</h3>
+            <p class="padround10px alleft w40 mlauto mrauto">
+                Voor communication heb ik meerdere malen contact gehad met Myrthe. Bij alle opleveringen is alle content gemailt naar Myrthe en is er gevraagd of zij deze ontvangen heeft. Bij het maken van content en de website is er gecommuniceerd naar Myrthe wat ze
+                ervan vond. Daardoor hebben we ook meerdere versies met verbeteringen.
 
+            </p>
+            <h3 class="fdr w40 padround10px padtop25px mlauto mrauto alleft">Docenten</h3>
+            <p class="padround10px alleft w40 mlauto mrauto">
+                Aan het begin van het semester heb ik goed contact gehad met de docenten. Meerdere en malen feedback gevraagd bij teams meetings. Ook heb ik aan de development docent gevraagd of hij mij door het semester opdrachten kan geven zodat ik ook de aandacht
+                goed besteed aan HTML, CSS en Javascript. Iedere week heb ik met de docent besproken wat ik heb gemaakt en heb ik hier ook feedback van ontvangen. Ook is mijn code nagelopen en hebben we gekeken naar manieren om de code net iets praktischer
+                op te zetten.
+                <br>
+                <br>
+                <a class="neon-button mrauto mlauto padround10px" href="../pdf/Onderzoekidil.pdf" target="_blank">
+                    <span>Lees meer</span>
+                </a>
+            </p>
+        </div>
+        <img class="standardimg padround10px mlauto mrauto alright" src="../img/Line man object.png" alt="">
 
-        <h1>Ruby Mus Website</h1><br>
-        <p>Tijdens het brainstormen voor een website voor Ruby Mus is ons groepje bezig geweest met verschillende Wireframes. Na verschillende soorten samen te hebben behandeld hebben we aspecten bij elkaar gevoegd om zo onze eigen stijl te vinden. Nu we
-            een duidelijk beeld hadden over hoe de website eruit zou moeten komen te zien, hebben we de one pager opgesplitst in 4 delen:
-            <br> - Hoofdpagina
-            <br> - Music Player
-            <br>- Contact Page
-            <br>- Events/Projects
-            <br> We hebben deze taken verdeeld en ik heb de music player op de website gemaakt.</p><br>
-        <!-- foto mock up en link naar website + link naar youtube link -->
-        <h3>Wat heb ik geleerd</h3><br>
-        <p>Doordat ik de music player moest maken heb ik veel geleerd over de styling met CSS en het gebruik van Javascript. Tijdens het maken van deze opdracht heb ik een eigen file opgezet. Daarbij kwam ik snel achter dat ik margins en benamingen in CSS
-            verkeerd heb gebruikt. Ik heb op de body tag de margins en padding veranderd dit ging dus fout toen ik mijn project ging samenvoegen met de one pager. Hierdoor heb ik dus geleerd om andere benamingen gebruiken dan de standaard naming conventions
-            (body, img., h3, p, etc.) Nadat ik de music player had gemaakt vond ik hem er nog een beetje saai en heb ik een bewegende gradient toegepast met CSS en Keyframes.
-        </p><br>
-        <h3>Wat kon er beter</h3><br>
-        <p>Omdat ieder in zijn eigen file aan het werken was ipv in 1 hoofdbestand, ontstond er op een gegeven moment een probleem dat iedereen andere naamgeving had. Dit was voor de deadline onze valkuil omdat wij deze problemen snel moesten oplossen. Dit
-            is iets waar wij daarna veel rekeningen mee hebben gehouden zodat we dit konden voorkomen of tijdig konden oplossen.</p><br>
-        <h3>Wat zou ik de volgende keer anders doen</h3><br>
-        <p>Een gezamenlijk git opstellen waardoor iedereen in 1 project kan samenwerken en beter nadenken over mijn benamingen in HTML en CSS. De volgende keer wil ik ook veel meer usability tests uitvoeren. Zo kan ik sneller eventueel bugs eruit halen en
-            controleren of mijn project wel goed aansluit op de doelgroep.
-        </p><br>
+    </section>
 
-
-    </div>
-
-
-    <br>
+    <section class="vh30 fdc"></section>
 
     <!-- Footer-->
     <footer>
         <div class="footer-content">
             <h3>Wanna have a chat message me on my socials or go to the<span>&nbsp;contact&nbsp;</span>page </h3>
-            <p>lorem ipsum dolor sit, amet consecteur adipisciing elit.</p>
+            <!-- <p>lorem ipsum dolor sit, amet consecteur adipisciing elit.</p> -->
             <ul class="socials">
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>Copyright and desiged by <span>&nbsp;Soulaiman Meskini&nbsp;</span> © 2021</p>
+            <p>Copyright and desiged by
+                <span>&nbsp;Soulaiman Meskini&nbsp;</span> © 2021</p>
         </div>
     </footer>
+
+    <a href="#" class="back-to-top">^</a>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).window.scrollY > 60) { // If page is scrolled more than 50px
+                $('.back-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('.back-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+
+        $('.back-to-top').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 'slow');
+            return false;
+        });
+    </script>
 
     <!-- Java-->
     <script src="js/scripts.js"></script>
@@ -122,11 +140,14 @@
     <script type="text/javascript">
         window.addEventListener("scroll", () => {
             var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 900);
+            header.classList.toggle("sticky", window.scrollY > 20);
         })
     </script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
-
-
 
 </html>

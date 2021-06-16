@@ -51,7 +51,7 @@ video {
     pointer-events: none;
     width: 25px;
     height: 25px;
-    border: 3px solid purple;
+    border: 3px solid rgb(221, 0, 221);
     border-radius: 50%;
     opacity: 0.5;
     z-index: 25;
@@ -61,7 +61,7 @@ video {
 
 .expand {
     animation: cursorAnim2 .5s forwards;
-    border: 3x solid rgb(88, 1, 88);
+    border: 3x solid rgb(151, 0, 151);
 }
 
 @keyframes cursorAnim {
