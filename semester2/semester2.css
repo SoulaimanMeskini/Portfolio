@@ -358,6 +358,7 @@ footer {
 }
 
 .footer-bottom {
+    text-align: center;
     background-color: black;
     width: 100vw;
     padding: 20px 0;
