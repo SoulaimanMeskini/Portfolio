@@ -393,6 +393,14 @@ header button {
     margin-left: auto;
 }
 
+.about-text a {
+    color: purple;
+}
+
+.about-text a:hover {
+    color: rgb(199, 2, 199);
+}
+
 .about>div {
     width: 25vw;
     margin-right: auto;
