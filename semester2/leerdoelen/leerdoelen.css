@@ -72,13 +72,13 @@ header .logo {
 }
 
 header.sticky .logo:hover {
-    background-image: url("../assets/img/sm_logo_purple.png");
+    background-image: url("../../assets/img/sm_logo_purple.png");
     width: 120px;
     height: 100%;
 }
 
 header .logo:hover {
-    background-image: url("../assets/img/sm_logo_purple.png");
+    background-image: url("../../assets/img/sm_logo_purple.png");
     background-position: center;
     background-size: cover;
     position: relative;
