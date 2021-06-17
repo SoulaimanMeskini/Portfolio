@@ -8,10 +8,9 @@
 
 body {
     background-color: whitesmoke;
-    height: 100vh;
     width: 100vw;
-    display: grid;
-    background: var(--clr-bg);
+    background-image: url("../assets/img/clouds_glitch.jpg");
+    background-color: #cccccc;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--clr-neon);
     overflow-x: hidden;
@@ -62,16 +61,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 12%;
-}
-
-.bt-center {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .neon-button {
@@ -92,13 +85,13 @@ img {
     transition: background-color 100ms linear;
     margin-right: 30px;
     margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .neon-button::before {
     pointer-events: none;
     content: "";
     position: absolute;
-    /* background: var(--clr-neon); */
     top: 100%;
     left: 0;
     width: 100%;
