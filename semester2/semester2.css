@@ -40,10 +40,8 @@ img {
     background: linear-gradient(13deg, #29062E 14%, #70094a 64%);
 }
 
- ::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 12px;
-    box-shadow: inset 7px 10px 12px #f0f0f0;
+::-webkit-scrollbar-track {
+    background: #000000;
 }
 
 
@@ -290,6 +288,7 @@ header button {
 .dropdownContent a:hover {
     color: purple;
 }
+
 
 /* footer */
 
